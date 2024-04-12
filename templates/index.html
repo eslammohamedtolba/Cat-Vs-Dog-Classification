@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>pet classifier</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Upload an Image to Classify</h1>
+        <form action="{{ url_for('predict') }}" method="post" enctype="multipart/form-data">
+            <input type="file" id="image" name="image" accept="image/*" required>
+            <button type="submit">Upload</button>
+        </form>
+        {% if prediction_result != -1 %}
+            <img src="data:image/jpeg;base64,{{ image }}" alt="Resized Image">
+            <p class="prediction">the prediction result {{prediction_result}}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
