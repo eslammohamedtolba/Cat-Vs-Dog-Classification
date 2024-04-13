@@ -31,6 +31,11 @@ Before running the code, make sure you have the following dependencies installed
 
 8-Create a predictive system that takes an image path as input, preprocesses the image, and uses the model to predict whether the image contains a cat(0) or a dog(1).
 
+## Flask App Structure
+- app.py: Contains Flask routes for rendering the web interface and handling predictions.
+- templates/: Directory with HTML templates for the web pages.
+- static/: Directory for static files as CSS.
+
 ## Model Accuracy
 The model achieves an accuracy of 96.5%.
 
