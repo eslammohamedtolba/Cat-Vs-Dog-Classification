@@ -1,5 +1,6 @@
 # Cat-Vs-Dog-Classification
 This is a Cats vs Dogs classifier model that uses a convolutional neural network (CNN) to distinguish between images of cats and dogs. 
+
 ![image about the final project](<Cat vs Dog classification app.PNG>)
 
 ## Prerequisites
